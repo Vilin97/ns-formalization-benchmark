@@ -73,8 +73,8 @@ def write_reports(output, rows):
     (output / "results.json").write_text(json.dumps(ordered, indent=2) + "\n")
     lines = ["# Lean directory profile", "",
              "Times in seconds; sorted by wall time, slowest first. Files run sequentially.",
-             "Wall time includes Lake startup. Phase times can overlap; do not sum them.",
-             "A dash means Lean did not report that phase. Full phase data is in `summary.csv`.", "",
+             "Wall time includes Lake startup. Cumulative phase times exclude nested profiled work.",
+             "Phase totals need not equal wall time (parallel tasks and unprofiled work). A dash means an unreported phase. Full phase data is in `summary.csv`.", "",
              "| File | Wall | Import | Elaboration | Type checking | Tactics | Status |",
              "|---|---:|---:|---:|---:|---:|---|"]
     for row in ordered:

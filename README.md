@@ -124,8 +124,10 @@ The output directory contains:
 - `results.json`, `metadata.json`, and `logs/`: structured results, commands,
   input file list, and complete profiler output.
 
-Wall time includes Lake startup. Profiler phases and individual events can
-overlap and should not be summed. Missing phases remain blank, not zero.
+Wall time includes Lake startup. Cumulative profiler categories exclude nested
+profiled work, but their sum need not equal wall time because of parallel tasks
+and unprofiled work. Individual events also contribute to the cumulative totals;
+do not add the events to those totals. Missing phases remain blank, not zero.
 Reports are checkpointed after each file. Failures remain in the table, the
 remaining files still run, and the script exits nonzero if any file failed.
 
