@@ -61,9 +61,40 @@ and peak RSS, compiler logs, RSS samples, and a summary under `results/`.
 `--resume` is only for diagnosing compatibility errors; its timing is not a clean
 benchmark and must not be compared against full runs.
 
-## Compatibility changes and results
+## Results
 
-Build configuration changes: LeanPool's Lean/Mathlib 4.34.0-rc1 pins are replaced
-by the common OAI 4.34.0-rc2 pins. Package configurations are narrowed to the two
-matching final theorems. Source changes and measured results will be recorded
-here after successful builds.
+Both builds succeeded, with **no edits to either version's Lean source files**.
+Only the build configurations and LeanPool's Lean/Mathlib pins changed.
+
+| Version | Wall time | Peak aggregate compiler RSS | Peak single compiler RSS |
+|---|---:|---:|---:|
+| OAI original (580 modules) | 18m 4.27s | 13.273 GiB | 5.845 GiB |
+| LeanPool (422 modules) | 11m 11.04s | 6.451 GiB | 2.196 GiB |
+
+LeanPool was **1.62× faster** (38.1% less wall time) and used **51.4% less peak
+aggregate compiler RSS** in these single clean builds. See the
+[full report](results/REPORT.md), [machine details](results/machine.json), and
+[raw comparison](results/comparison.json).
+
+The first successful clean LeanPool run is named `leanpool-preflight`; it did
+not require repairs or a resumed build. OAI ran after LeanPool. Common dependency
+cache preparation is excluded from both measurements; OS filesystem caches were
+not flushed.
+
+## Verification and compatibility
+
+LeanPool's Lean/Mathlib 4.34.0-rc1 pins were replaced by the common OAI 4.34.0-rc2
+pins. Package configurations were narrowed to the matching final NS theorems.
+Proof files match their pinned upstream SHA-256 hashes byte for byte; run
+`.venv/bin/python scripts/verify_sources.py` to check this.
+
+Both final theorem pairs were separately inspected with `#print axioms` after
+compilation. Only `propext`, `Classical.choice`, and `Quot.sound` occur; there is
+no `sorryAx`. The logs are in `results/oai-axioms.log` and
+`results/leanpool-axioms.log`. This checks axiom dependencies, not independent
+semantic equivalence to the informal mathematical statement.
+
+```sh
+./scripts/check_axioms.sh
+.venv/bin/python scripts/summarize.py
+```

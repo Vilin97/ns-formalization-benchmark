@@ -1,0 +1,1 @@
+LeanPool/NavierStokesAndEuler/NavierStokes/ParametricODE.lean:159:43: warning: `ContinuousLinearMap.lipschitz` has been deprecated: Use `ContinuousLinearMap.lipschitzWith` instead

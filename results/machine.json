@@ -1,0 +1,12 @@
+{
+  "os": "ProductName:\t\tmacOS\nProductVersion:\t\t15.7.4\nBuildVersion:\t\t24G517",
+  "machine": "arm64",
+  "cpu": "Apple M4 Pro",
+  "physical_cores": 12,
+  "logical_cores": 12,
+  "memory_bytes": 51539607552,
+  "power": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=6750307)\t62%; charging; 1:26 remaining present: true",
+  "lean_version": "Lean (version 4.34.0-rc2, arm64-apple-darwin24.6.0, commit 6a10ac8c22beadecabdbb0919c2b50214762f91d, Release)",
+  "lean_binary_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "python": "Python 3.14.7"
+}

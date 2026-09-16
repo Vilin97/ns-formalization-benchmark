@@ -1,0 +1,19 @@
+{
+  "variant": "leanpool",
+  "label": "preflight",
+  "jobs": 4,
+  "lean_threads": 1,
+  "lean": "Lean (version 4.34.0-rc2, arm64-apple-darwin24.6.0, commit 6a10ac8c22beadecabdbb0919c2b50214762f91d, Release)",
+  "lean_binary": "/Users/vasil/.elan/toolchains/leanprover--lean4---v4.34.0-rc2/bin/lean",
+  "platform": "macOS-15.7.4-arm64-arm-64bit-Mach-O",
+  "started_utc": "2026-09-16T07:03:51.081391+00:00",
+  "clean": true,
+  "modules": 422,
+  "rss_sample_interval_seconds": 0.05,
+  "wall_seconds": 671.041002583981,
+  "peak_aggregate_compiler_rss_bytes": 6926532608,
+  "peak_single_compiler_rss_bytes": 2358280192,
+  "completed_modules": 422,
+  "failed_modules": [],
+  "success": true
+}

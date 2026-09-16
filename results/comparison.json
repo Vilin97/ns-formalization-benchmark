@@ -1,0 +1,68 @@
+{
+  "runs": {
+    "oai": {
+      "variant": "oai",
+      "label": "run1",
+      "jobs": 4,
+      "lean_threads": 1,
+      "lean": "Lean (version 4.34.0-rc2, arm64-apple-darwin24.6.0, commit 6a10ac8c22beadecabdbb0919c2b50214762f91d, Release)",
+      "lean_binary": "/Users/vasil/.elan/toolchains/leanprover--lean4---v4.34.0-rc2/bin/lean",
+      "platform": "macOS-15.7.4-arm64-arm-64bit-Mach-O",
+      "started_utc": "2026-09-16T07:15:26.223138+00:00",
+      "clean": true,
+      "modules": 580,
+      "rss_sample_interval_seconds": 0.05,
+      "wall_seconds": 1084.2739615000319,
+      "peak_aggregate_compiler_rss_bytes": 14252097536,
+      "peak_single_compiler_rss_bytes": 6275760128,
+      "completed_modules": 580,
+      "failed_modules": [],
+      "success": true,
+      "dependency_revisions": {
+        "mathlib": "85e3a25e006c35636f0e53b0e9296caca2685bc0",
+        "plausible": "d9598f07b1bc701f1e3aae163d2681c1fd978793",
+        "LeanSearchClient": "ba67e212be1197b84c1f1f6299488a10a3002713",
+        "importGraph": "d8823026ac7ef130c253089d95685f9877b95323",
+        "proofwidgets": "a8acbfd87375ff4abe14ce09db5b7664d383bc7f",
+        "aesop": "18889deb9e83ea7420ef51c160d6f88552e744e3",
+        "Qq": "507746ab8f4b643ccdacb2ec4cdb5853fa9f8ab3",
+        "batteries": "d54dddc581e08be364c278052863524bff7a99a9",
+        "Cli": "ab3a82db9fea14cf0fd7f5a2de650f4b534640af"
+      }
+    },
+    "leanpool": {
+      "variant": "leanpool",
+      "label": "preflight",
+      "jobs": 4,
+      "lean_threads": 1,
+      "lean": "Lean (version 4.34.0-rc2, arm64-apple-darwin24.6.0, commit 6a10ac8c22beadecabdbb0919c2b50214762f91d, Release)",
+      "lean_binary": "/Users/vasil/.elan/toolchains/leanprover--lean4---v4.34.0-rc2/bin/lean",
+      "platform": "macOS-15.7.4-arm64-arm-64bit-Mach-O",
+      "started_utc": "2026-09-16T07:03:51.081391+00:00",
+      "clean": true,
+      "modules": 422,
+      "rss_sample_interval_seconds": 0.05,
+      "wall_seconds": 671.041002583981,
+      "peak_aggregate_compiler_rss_bytes": 6926532608,
+      "peak_single_compiler_rss_bytes": 2358280192,
+      "completed_modules": 422,
+      "failed_modules": [],
+      "success": true,
+      "dependency_revisions": {
+        "mathlib": "85e3a25e006c35636f0e53b0e9296caca2685bc0",
+        "plausible": "d9598f07b1bc701f1e3aae163d2681c1fd978793",
+        "LeanSearchClient": "ba67e212be1197b84c1f1f6299488a10a3002713",
+        "importGraph": "d8823026ac7ef130c253089d95685f9877b95323",
+        "proofwidgets": "a8acbfd87375ff4abe14ce09db5b7664d383bc7f",
+        "aesop": "18889deb9e83ea7420ef51c160d6f88552e744e3",
+        "Qq": "507746ab8f4b643ccdacb2ec4cdb5853fa9f8ab3",
+        "batteries": "d54dddc581e08be364c278052863524bff7a99a9",
+        "Cli": "ab3a82db9fea14cf0fd7f5a2de650f4b534640af"
+      }
+    }
+  },
+  "oai_wall_divided_by_leanpool": 1.6158088065033471,
+  "leanpool_wall_reduction_percent": 38.11148967779013,
+  "leanpool_aggregate_rss_reduction_percent": 51.39990734343512,
+  "leanpool_single_process_rss_reduction_percent": 62.422397543872464
+}
