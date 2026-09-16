@@ -98,3 +98,41 @@ semantic equivalence to the informal mathematical statement.
 ./scripts/check_axioms.sh
 .venv/bin/python scripts/summarize.py
 ```
+
+## Profile a directory with Lean's profiler
+
+From this repository's root:
+
+```sh
+python3 scripts/profile_directory.py \
+  leanpool/LeanPool/NavierStokesAndEuler/NavierStokes \
+  --output results/ns-profile
+```
+
+The script finds the enclosing Lake project and runs
+`lake env lean --profile <file>` sequentially for every `.lean` file, recursively.
+It uses exactly those Lean flags, preserving the behavior of the single-file
+command. Imports must already be built; this is profiling, not a clean rebuild.
+Dependency caches (`.lake`) and Git internals are excluded.
+
+The output directory contains:
+
+- `REPORT.md`: per-file table, sorted by wall time, with import, elaboration,
+  type checking and tactic timings, plus success/failure status.
+- `summary.csv`: per-file wall time and **all** cumulative phase timings Lean reports.
+- `events.csv`: individual `... took ...` timings reported by Lean.
+- `results.json`, `metadata.json`, and `logs/`: structured results, commands,
+  input file list, and complete profiler output.
+
+Wall time includes Lake startup. Profiler phases and individual events can
+overlap and should not be summed. Missing phases remain blank, not zero.
+Reports are checkpointed after each file. Failures remain in the table, the
+remaining files still run, and the script exits nonzero if any file failed.
+
+A single file also works. Use `--no-recursive` for immediate children only,
+`--project PATH` to explicitly choose the Lake project, and `--timeout SECONDS`
+to limit each file. An existing output directory is never overwritten; omit
+`--output` for a new timestamped directory under `./profile-results/`.
+
+An example directory run is saved in
+[results/profile-for-mathlib/REPORT.md](results/profile-for-mathlib/REPORT.md).

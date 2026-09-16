@@ -1,0 +1,9 @@
+file,event,seconds
+LeanPool/NavierStokesAndEuler/ForMathlib/SobolevThreeDimensional.lean,import,1.69
+LeanPool/NavierStokesAndEuler/ForMathlib/SobolevThreeDimensional.lean,typeclass inference of SecondCountableTopologyEither,0.186
+LeanPool/NavierStokesAndEuler/ForMathlib/SmoothCutoff.lean,import,1.54
+LeanPool/NavierStokesAndEuler/ForMathlib/Gronwall.lean,import,1.36
+LeanPool/NavierStokesAndEuler/ForMathlib/FiniteDimensionalBumps.lean,import,1.58
+LeanPool/NavierStokesAndEuler/ForMathlib/StronglyMeasurable.lean,import,1.22
+LeanPool/NavierStokesAndEuler/ForMathlib/WeightedDecay.lean,import,0.971
+LeanPool/NavierStokesAndEuler/ForMathlib/SmoothnessOrder.lean,import,0.441

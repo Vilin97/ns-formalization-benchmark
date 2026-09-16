@@ -1,0 +1,29 @@
+import took 441ms
+LeanPool/NavierStokesAndEuler/ForMathlib/SmoothnessOrder.lean:27:19: warning: This simp argument is unused:
+  WithTop.coe_le_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+cumulative profiling times:
+	attribute application 0.255ms
+	congr simp thm 0.121ms
+	elaboration 1.97ms
+	fix level params 0.0152ms
+	import 441ms
+	initialization 16.8ms
+	instantiate metavars 0.0288ms
+	interpretation 145ms
+	let-to-have transformation 0.0109ms
+	linting 0.666ms
+	module linting 0.0025ms
+	overlappingInstancesLinter 0.879ms
+	parsing 0.278ms
+	process pre-definitions 0.142ms
+	share common exprs 0.0747ms
+	simp 2.13ms
+	tactic execution 0.954ms
+	tacticAnalysis 2.22ms
+	type checking 0.516ms
+	typeclass inference 2.04ms

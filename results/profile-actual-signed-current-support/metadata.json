@@ -1,0 +1,17 @@
+{
+  "project": "/Users/vasil/Github/ns-formalization-benchmark/leanpool",
+  "input": "/Users/vasil/Github/ns-formalization-benchmark/leanpool/LeanPool/NavierStokesAndEuler/NavierStokes/ActualSignedCurrentSupport.lean",
+  "started_at": "2026-09-16T08:32:06.754697-07:00",
+  "files": [
+    "LeanPool/NavierStokesAndEuler/NavierStokes/ActualSignedCurrentSupport.lean"
+  ],
+  "command_template": [
+    "lake",
+    "env",
+    "lean",
+    "--profile",
+    "<file>"
+  ],
+  "recursive": true,
+  "timeout_seconds": null
+}

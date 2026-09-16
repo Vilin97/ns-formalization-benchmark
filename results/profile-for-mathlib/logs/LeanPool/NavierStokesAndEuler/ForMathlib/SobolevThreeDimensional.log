@@ -1,0 +1,30 @@
+import took 1.69s
+typeclass inference of SecondCountableTopologyEither took 186ms
+cumulative profiling times:
+	attribute application 0.292ms
+	blocked (unaccounted) 17.5ms
+	compilation (IR) 0.383ms
+	compilation (LCNF base) 8.05ms
+	compilation (LCNF impure) 1.35ms
+	compilation (LCNF mono) 2.45ms
+	congr simp thm 1.12ms
+	dsimp 2.22ms
+	elaboration 103ms
+	fix level params 0.768ms
+	import 1.69s
+	initialization 16.5ms
+	instantiate metavars 0.275ms
+	interpretation 489ms
+	let-to-have transformation 0.343ms
+	linting 12.7ms
+	module linting 0.002ms
+	norm_num 4.35ms
+	overlappingInstancesLinter 6.25ms
+	parsing 5.36ms
+	process pre-definitions 8.25ms
+	share common exprs 4.06ms
+	simp 21ms
+	tactic execution 310ms
+	tacticAnalysis 16.6ms
+	type checking 140ms
+	typeclass inference 1.47s

@@ -1,0 +1,46 @@
+[
+  {
+    "file": "LeanPool/NavierStokesAndEuler/NavierStokes/ActualSignedCurrentSupport.lean",
+    "wall_seconds": 4.174567040987313,
+    "exit_code": 0,
+    "timed_out": false,
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "--profile",
+      "LeanPool/NavierStokesAndEuler/NavierStokes/ActualSignedCurrentSupport.lean"
+    ],
+    "log": "logs/LeanPool/NavierStokesAndEuler/NavierStokes/ActualSignedCurrentSupport.log",
+    "phases": {
+      "attribute application": 0.000193,
+      "blocked (unaccounted)": 4.02e-05,
+      "congr simp thm": 0.00103,
+      "dsimp": 0.00579,
+      "elaboration": 0.055,
+      "fix level params": 0.000303,
+      "import": 1.89,
+      "initialization": 0.0158,
+      "instantiate metavars": 0.000236,
+      "interpretation": 0.668,
+      "let-to-have transformation": 0.000187,
+      "linting": 0.0148,
+      "module linting": 1.9200000000000003e-06,
+      "overlappingInstancesLinter": 0.0287,
+      "parsing": 0.00526,
+      "process pre-definitions": 0.0032,
+      "share common exprs": 0.00175,
+      "simp": 0.0158,
+      "tactic execution": 0.0286,
+      "tacticAnalysis": 0.0699,
+      "type checking": 0.0213,
+      "typeclass inference": 0.10400000000000001
+    },
+    "events": [
+      {
+        "event": "import",
+        "seconds": 1.89
+      }
+    ]
+  }
+]

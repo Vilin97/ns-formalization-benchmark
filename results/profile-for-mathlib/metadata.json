@@ -1,0 +1,23 @@
+{
+  "project": "/Users/vasil/Github/ns-formalization-benchmark/leanpool",
+  "input": "/Users/vasil/Github/ns-formalization-benchmark/leanpool/LeanPool/NavierStokesAndEuler/ForMathlib",
+  "started_at": "2026-09-16T08:31:28.282451-07:00",
+  "files": [
+    "LeanPool/NavierStokesAndEuler/ForMathlib/FiniteDimensionalBumps.lean",
+    "LeanPool/NavierStokesAndEuler/ForMathlib/Gronwall.lean",
+    "LeanPool/NavierStokesAndEuler/ForMathlib/SmoothCutoff.lean",
+    "LeanPool/NavierStokesAndEuler/ForMathlib/SmoothnessOrder.lean",
+    "LeanPool/NavierStokesAndEuler/ForMathlib/SobolevThreeDimensional.lean",
+    "LeanPool/NavierStokesAndEuler/ForMathlib/StronglyMeasurable.lean",
+    "LeanPool/NavierStokesAndEuler/ForMathlib/WeightedDecay.lean"
+  ],
+  "command_template": [
+    "lake",
+    "env",
+    "lean",
+    "--profile",
+    "<file>"
+  ],
+  "recursive": true,
+  "timeout_seconds": null
+}
