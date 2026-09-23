@@ -1,0 +1,33 @@
+{"caption":"","data":"[diag] Diagnostics\n  [reduction] unfolded declarations (max: 193536, num: 15):\n    [reduction] Nat.rec ↦ 193536\n    [reduction] HSub.hSub ↦ 62208\n    [reduction] Sub.sub ↦ 62208\n    [reduction] Classical.choose ↦ 55296\n    [reduction] Classical.indefiniteDescription ↦ 55296\n    [reduction] max ↦ 13824\n    [reduction] List.insert ↦ 1152\n    [reduction] Multiset.ofList ↦ 360\n    [reduction] Quot.lift ↦ 360\n    [reduction] List.dedup ↦ 288\n    [reduction] List.pwFilter ↦ 288\n    [reduction] DFunLike.coe ↦ 144\n    [reduction] HSMul.hSMul ↦ 144\n    [reduction] Multiset.map ↦ 144\n    [reduction] SMul.smul ↦ 144\n  [reduction] unfolded reducible declarations (max: 342180, num: 11):\n    [reduction] Nat.casesOn ↦ 342180\n    [reduction] Subtype.val ↦ 55296\n    [reduction] Decidable.casesOn ↦ 35724\n    [reduction] Bool.casesOn ↦ 29376\n    [reduction] List.casesOn ↦ 2808\n    [reduction] List.contains ↦ 1728\n    [reduction] Quot.liftOn ↦ 360\n    [reduction] ContinuousLinearMap.toLinearMap ↦ 276\n    [reduction] LinearMap.toAddHom ↦ 252\n    [reduction] Finset.val ↦ 216\n    [reduction] AddHom.toFun ↦ 132\n  [reduction] Axioms (possibly imported non-exposed defs) that were tried to be unfolded (max: 55374, num: 1):\n    [reduction] Classical.choice ↦ 55374\n  [kernel] unfolded declarations (max: 102, num: 2):\n    [kernel] HSMul.hSMul ↦ 102\n    [kernel] SMul.smul ↦ 102\n  use `set_option diagnostics.threshold <num>` to control threshold for reporting counters","endPos":{"column":45,"line":16},"fileName":"DefeqProbe.lean","isSilent":false,"keepFullRange":false,"kind":"diag","pos":{"column":0,"line":12},"severity":"information"}
+{"caption":"","data":"Used 88967 heartbeats, which is less than the current maximum of 200000.","endPos":{"column":45,"line":16},"fileName":"DefeqProbe.lean","isSilent":false,"keepFullRange":false,"kind":"[anonymous]","pos":{"column":0,"line":11},"severity":"information"}
+{"caption":"","data":"tactic execution of Lean.Parser.Tactic.exact took 2.64s\nelaboration took 14.5ms\n","endPos":null,"fileName":"DefeqProbe.lean","isSilent":false,"keepFullRange":false,"kind":"[anonymous]","pos":{"column":0,"line":11},"severity":"information"}
+{"caption":"","data":"type checking took 2.29ms\n","endPos":null,"fileName":"DefeqProbe.lean","isSilent":false,"keepFullRange":false,"kind":"[anonymous]","pos":{"column":0,"line":12},"severity":"information"}
+{"caption":"","data":"linting took 1.92ms\n","endPos":null,"fileName":"DefeqProbe.lean","isSilent":false,"keepFullRange":false,"kind":"[anonymous]","pos":{"column":0,"line":11},"severity":"information"}
+{"caption":"","data":"[diag] Diagnostics\n  [kernel] unfolded declarations (max: 102, num: 2):\n    [kernel] HSMul.hSMul ↦ 102\n    [kernel] SMul.smul ↦ 102\n  use `set_option diagnostics.threshold <num>` to control threshold for reporting counters","endPos":{"column":45,"line":24},"fileName":"DefeqProbe.lean","isSilent":false,"keepFullRange":false,"kind":"diag","pos":{"column":0,"line":19},"severity":"information"}
+{"caption":"","data":"Used 83 heartbeats, which is less than the current maximum of 200000.","endPos":{"column":45,"line":24},"fileName":"DefeqProbe.lean","isSilent":false,"keepFullRange":false,"kind":"[anonymous]","pos":{"column":0,"line":18},"severity":"information"}
+{"caption":"","data":"dsimp took 1.21ms\nelaboration took 7.15ms\n","endPos":null,"fileName":"DefeqProbe.lean","isSilent":false,"keepFullRange":false,"kind":"[anonymous]","pos":{"column":0,"line":18},"severity":"information"}
+{"caption":"","data":"type checking took 2.37ms\n","endPos":null,"fileName":"DefeqProbe.lean","isSilent":false,"keepFullRange":false,"kind":"[anonymous]","pos":{"column":0,"line":19},"severity":"information"}
+{"caption":"","data":"linting took 1.71ms\n","endPos":null,"fileName":"DefeqProbe.lean","isSilent":false,"keepFullRange":false,"kind":"[anonymous]","pos":{"column":0,"line":18},"severity":"information"}
+{"caption":"","data":"[diag] Diagnostics\n  [kernel] unfolded declarations (max: 102, num: 2):\n    [kernel] HSMul.hSMul ↦ 102\n    [kernel] SMul.smul ↦ 102\n  use `set_option diagnostics.threshold <num>` to control threshold for reporting counters","endPos":{"column":47,"line":32},"fileName":"DefeqProbe.lean","isSilent":false,"keepFullRange":false,"kind":"diag","pos":{"column":0,"line":27},"severity":"information"}
+{"caption":"","data":"Used 147 heartbeats, which is less than the current maximum of 200000.","endPos":{"column":47,"line":32},"fileName":"DefeqProbe.lean","isSilent":false,"keepFullRange":false,"kind":"[anonymous]","pos":{"column":0,"line":26},"severity":"information"}
+{"caption":"","data":"tactic execution of Lean.Parser.Tactic.simpa took 2.39ms\nelaboration took 6.57ms\n","endPos":null,"fileName":"DefeqProbe.lean","isSilent":false,"keepFullRange":false,"kind":"[anonymous]","pos":{"column":0,"line":26},"severity":"information"}
+{"caption":"","data":"type checking took 2.08ms\n","endPos":null,"fileName":"DefeqProbe.lean","isSilent":false,"keepFullRange":false,"kind":"[anonymous]","pos":{"column":0,"line":27},"severity":"information"}
+{"caption":"","data":"linting took 1.73ms\n","endPos":null,"fileName":"DefeqProbe.lean","isSilent":false,"keepFullRange":false,"kind":"[anonymous]","pos":{"column":0,"line":26},"severity":"information"}
+cumulative profiling times:
+	attribute application 0.0165ms
+	congr simp thm 0.117ms
+	dsimp 1.21ms
+	elaboration 28.2ms
+	fix level params 0.0362ms
+	instantiate metavars 0.045ms
+	linting 6.46ms
+	module linting 0.00233ms
+	overlappingInstancesLinter 0.691ms
+	parsing 0.603ms
+	process pre-definitions 0.532ms
+	share common exprs 0.149ms
+	simp 1.13ms
+	tactic execution 2.64s
+	tacticAnalysis 1.87ms
+	type checking 6.74ms
+	typeclass inference 2.08ms
